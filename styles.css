@@ -1,0 +1,147 @@
+/* Stil für den Block "startseite", mit Raute spricht man ids an */
+#startseite.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Für vertikale Ausrichtung zentriert */
+  height: 100vh;
+  /* 100% der Bildschirmhöhe für die vertikale Zentrierung */
+}
+
+/* Stil für den Text innerhalb des Blocks "startseite", mit Punkt spricht man Klassen an */
+.starttext {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* Zentriert den Text horizontal */
+}
+
+/* Stil für den Link "Weiter" */
+.buttons {
+  display: flex;
+  justify-content: center;
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phase_1 {
+  font-weight: bold;
+}
+
+.task {
+  font-weight: bold;
+}
+
+.phases {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.begin_game {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wordlist {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* CSS zum Verkleinern und Anordnen der Fotos */
+.photolist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 Spalten */
+  grid-gap: 10px;
+  /* Abstand zwischen den Fotos */
+}
+
+.photolist img {
+  width: 100%;
+  /* Setzen Sie die gewünschte Breite */
+  height: 200px;
+  /* Setzen Sie die gewünschte Höhe */
+  object-fit: cover;
+  /* Ändern Sie dies je nachdem, wie Sie das Bild zuschneiden möchten */
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.timer {
+  position: fixed;
+  top: 0.5px;
+  right: 10px;
+  background-color: #b4b4b4;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  /* Angepasst, um genügend Platz für den Text zu bieten */
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  /* Hinzugefügt, um den Text vertikal zu zentrieren */
+  display: inline-block;
+}
+
+#exportButton {
+  position: fixed;
+  justify-content: center;
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+  height: 1cm;
+  width: 6cm;
+  top: 90px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* Abstand zwischen Button und Text */
+}
+
+#thanks {
+  justify-content: center;
+  text-align: center;
+}
+
+#ergebnisse {
+  margin-top: 20px;
+  /* Optional: Abstand zwischen Text und den Ergebnissen */
+}
