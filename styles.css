@@ -116,6 +116,13 @@
   display: inline-block;
 }
 
+.achtung {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
 #exportButton {
   position: fixed;
   justify-content: center;

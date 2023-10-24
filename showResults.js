@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (let i = 1; i <= 4; i++) {
     const antwort = localStorage.getItem(`game${i}`) || "Keine Antwort";
-    ergebnisse.push(`Spiel ${i},${antwort}`);
-    ergebnisseHtml += `<li>Spiel ${i}: ${antwort}</li>`;
+    const remainingTime = localStorage.getItem(`game${i}Time`) || "Nein";
+    ergebnisse.push(`Spiel ${i},${antwort},${remainingTime}`);
+    ergebnisseHtml += `<li>Spiel ${i}: ${antwort} (Verbleibende Zeit: ${remainingTime}s)</li>`;
   }
 
   ergebnisseHtml += "</ul>";

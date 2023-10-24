@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const antwortElement = document.getElementById("antwort");
   const spielNummer = window.location.pathname.split("/").pop().split(".")[0]; // z.B. "game1"
 
+  const weiterButton = document.querySelector(".weiter");
+  if (weiterButton) {
+    weiterButton.addEventListener("click", () => {
+      localStorage.setItem(`${spielNummer}Time`, countdown);
+    });
+  }
+
   antwortElement.addEventListener("input", () => {
     localStorage.setItem(spielNummer, antwortElement.value);
   });
@@ -19,6 +26,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   };
 
   const redirectToNextPage = () => {
+    localStorage.setItem(`${spielNummer}Time`, countdown);
     let nextPage = "";
 
     switch (currentPage) {
